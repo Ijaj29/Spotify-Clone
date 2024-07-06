@@ -1,0 +1,14 @@
+ .card_poster {
+     height: 150px;
+     width: 150px;
+     margin-inline: 4px;
+     border-radius: 75px;
+     background-color: black;
+ }
+ 
+ .card_poster:hover {
+     height: 160px;
+     width:160px ;
+ }
+
+

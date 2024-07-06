@@ -1,0 +1,66 @@
+header {
+    height: 70vh;
+    background-image: url("../../assets/Spotifybackground.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}   
+
+.header_content {
+    padding-top: 15vw;
+}
+
+.imgspotify {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 0px;
+}
+
+.ok {
+    color: #fff;
+    width: 22vw;
+    margin-top: 290px;
+    margin-bottom: 20px;
+}
+
+.play {
+    width: 30px;
+    height: 30px;
+}
+
+.get {
+    cursor: pointer;
+    margin-top: 5px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    width: 150px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.get:hover {
+    background-color: white;
+    color: black;
+    font: bolder;
+}
+
+.like {
+    width: 45px;
+    height: 45px;
+    margin-top: 280px;
+    margin-right: 10px;
+}
+
+.like1 {
+    width: 40px;
+    height: 40px;
+    margin-top: 270px;
+    margin-right: 10px;
+    padding-bottom: 3px;
+}
+
+.content {
+    cursor: default;
+    margin-left: 40px;
+}
