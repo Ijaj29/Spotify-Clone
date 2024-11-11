@@ -54,7 +54,7 @@ const Nav = () => {
         <div className='nav_right'>
           <div className=''>
             <button className='buttonapp'>
-              <b>Open App</b>
+              <b>Open Appp</b>
             </button>
           </div>
           <img
