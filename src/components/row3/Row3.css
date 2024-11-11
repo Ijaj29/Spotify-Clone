@@ -25,6 +25,6 @@
     overflow-x: scroll;
 }
 
-.row_card::-webkit-scrollbar {
+.row_card3::-webkit-scrollbar {
     display: none;
 }

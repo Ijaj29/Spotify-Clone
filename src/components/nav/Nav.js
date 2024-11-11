@@ -47,14 +47,10 @@ const Nav = () => {
           src={search}
         />
 
-
-
-
-
         <div className='nav_right'>
           <div className=''>
             <button className='buttonapp'>
-              <b>Open Appp</b>
+              <b>Open App</b>
             </button>
           </div>
           <img

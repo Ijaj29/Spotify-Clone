@@ -1,16 +1,26 @@
-import './Nav2.css';
-import { useState, useEffect } from 'react';
-// import spo from '../../assets/../../src/assets/spotify-1-logo.png';
-// import menu from '../../assets/../../src/assets/mnf.jpg';
-// import search from '../../assets/../../src/assets/search.png';
-
-
-
-
-
+import "./Nav2.css";
+import { useState, useEffect } from "react";
 
 const Nav = () => {
   const [show, setShow] = useState(false);
+  const Navlist = [
+    "Artists",
+    "New Releases",
+    "Recent",
+    "Playlists",
+    "Top",
+    "Trending",
+    "Most Played",
+    // "English",
+    // "Hindi",
+    // "Marathi",
+    // "Urdu",
+    // "Popular",
+    // "Latest",
+    // "Recommended",
+    // "Luis Fonsi",
+    // "Sia",
+  ];
 
   const scrollHandler = () => {
     if (window.scrollY > 10) {
@@ -20,74 +30,31 @@ const Nav = () => {
     }
   };
 
+  const handleScroll = (id) => {
+    const section = document.getElementById(id);
+    section.scrollIntoView({ behavior: 'smooth' });
+  };
+
   useEffect(() => {
-    window.addEventListener('scroll', scrollHandler);
+    window.addEventListener("scroll", scrollHandler);
     return () => {
-      window.removeEventListener('scroll', scrollHandler);
+      window.removeEventListener("scroll", scrollHandler);
     };
   }, []);
 
   return (
-    <nav className='nav1'
+    <nav
+      className="nav1 container-fluid"
       style={{
-        backgroundColor: show ? 'rgb(20,20,20)' : 'transparent',
+        backgroundColor: show ? "rgb(20,20,20)" : "transparent",
       }}
     >
       <section>
-        <div className='navs'>
-          <div>
-            <p>Artists</p>
-          </div>
-          <div>
-            <p>New Releases</p>
-          </div>
-          <div>
-            <p>Recent</p>
-          </div>
-          <div>
-            <p>Playlists</p>
-          </div>
-          <div>
-            <p>Top </p>
-          </div>
-          <div>
-            <p>Trending </p>
-          </div>
-          <div>
-            <p>Charts</p>
-          </div>
-          <div>
-            <p>English</p>
-          </div>
-          <div>
-            <p>Hindi</p>
-          </div>
-          <div>
-            <p>Marathi</p>
-          </div>
-          <div>
-            <p>Urdu</p>
-          </div>
-          <div>
-            <p>Popular </p>
-          </div>
-          <div>
-            <p>Latest</p>
-          </div>
-          <div>
-            <p>Recommended</p>
-          </div>
-          <div>
-            <p>Luis Fonsi</p>
-          </div>
-          <div>
-            <p>Sia</p>
-          </div>
-          <div>
-            <p></p>
-          </div>
-         
-        
+        <div className="navs ">
+          {Navlist &&
+            Navlist.map((data) => {
+              return <div key={data} onClick={() => handleScroll(data)} className="px-5">{data}</div>;
+            })}
         </div>
       </section>
     </nav>

@@ -1,26 +1,26 @@
-import './App.css';
+import "./App.css";
 
-import Nav from './components/nav/Nav';
-import Nav2 from './components/nav2/Nav2';
-import Header from './components/header/Header';
-import Header2 from './components/header2/Header2';
-import Content from './components/content/Content';
-import Content2 from './components/content2/Content2';
-import Content3 from './components/content3/Content3';
-import Content4 from './components/content4/Content4';
-import Content5 from './components/content5/Content5';
-import Content6 from './components/content6/Content6';
-import axios from 'axios';
-import { ContextProvider } from './context/ContextProvider';
+import Nav from "./components/nav/Nav";
+import Nav2 from "./components/nav2/Nav2";
+import Header from "./components/header/Header";
+import Header2 from "./components/header2/Header2";
+import Content from "./components/content/Content";
+import Content2 from "./components/content2/Content2";
+import Content3 from "./components/content3/Content3";
+import Content4 from "./components/content4/Content4";
+import Content5 from "./components/content5/Content5";
+import Content6 from "./components/content6/Content6";
+import axios from "axios";
+import { ContextProvider } from "./context/ContextProvider";
 
-axios.defaults.baseURL = 'https://api.themoviedb.org/3';
+axios.defaults.baseURL = "https://api.themoviedb.org/3";
 axios.defaults.params = {
-  api_key: '', // ! Add your API key here
+  api_key: "", // ! Add your API key here
 };
 
 const App = () => {
   return (
-    <div>
+    <div className="container-fluid">
       <ContextProvider>
         {/* Nav */}
         <Nav />
@@ -29,30 +29,41 @@ const App = () => {
         <Header />
         <Nav2 />
 
-        {/* Artists */}
-        <Content />
+        {/* Artists  */}
+        <div id="Artists">
+          <Content />
+        </div>
 
         {/* Recently Played Hindi  */}
-        <Content2 />
+        <div id="Recent">
+          <Content2 />
+        </div>
 
         {/*Your Playlists  English */}
-        <Content4 />
+        <div id="Playlists">
+          <Content4 />
+        </div>
 
         {/*Top Album with Big Size of Card  */}
-        <Content3 />
+        <div id="Top">
+          <Content3 />
+        </div>
 
         {/* Together 2 and 4 for better look */}
-        {/* <Content2 />
-        <Content4 /> */}
-        <Content6 />
+        <div id="Trending">
+          <Content6 />
+        </div>
 
         {/* Header 2 with only image  */}
-        <Header2 />
+        <div id="New Releases">
+          <Content2 />
+        </div>
 
         {/* All Content together and many more for increasing content */}
-        <Content5 />
+        <div id="Most Played">
+          <Content5 />
+        </div>
       </ContextProvider>
-
     </div>
   );
 };

@@ -4,7 +4,7 @@ const StateContext = createContext({});
 
 export const ContextProvider = ({ children }) => {
     const [loginData, setLoginData] = useState('');
-    const IMG_URL = 'http://localhost:3000';
+    const IMG_URL = 'https://ijaj29.github.io/Spotify-Clone';
 
     return (
         <StateContext.Provider value={{ loginData, setLoginData, IMG_URL }}>

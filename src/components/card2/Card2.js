@@ -6,35 +6,8 @@ import { useStateContext } from '../../context/ContextProvider';
 
 
 export default function Card(props) {
-  const imageUrl = `https://image.tmdb.org/t/p/original/${props.poster}`;
-  const [video, setVideo] = useState('');
-  const [isHovered, setIsHovered] = useState(false);
-  const youtubeUrl = `https://www.youtube.com/embed/`;
 
   const { IMG_URL } = useStateContext();
-  console.log('IMG_URL :', IMG_URL);
-
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-  };
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
-
-  const fetchURL = async () => {
-    try {
-      const response = await axios.get(`/movie/${props.id}`, {
-        params: {
-          append_to_response: 'videos',
-        },
-      });
-      if (response.data.videos.results.lenght > 0) {
-        setVideo(response.data.videos.results[0].key);
-      }
-    } catch (e) {
-      console.log(e);
-    }
-  };
 
   useEffect(() => {
   }, []);

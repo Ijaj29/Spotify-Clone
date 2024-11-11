@@ -1,5 +1,6 @@
 header {
-    height: 70vh;
+    height: 60vh;
+    width: 100%;
     background-image: url("../../assets/Spotifybackground.webp");
     background-repeat: no-repeat;
     background-size: cover;

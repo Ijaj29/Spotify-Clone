@@ -1,92 +1,90 @@
 const RowData = [
   {
-    title: 'Your Favourite Artists',
+    title: "Your Favourite Artists",
     movie_data: [
       {
-        img: 'arijithsinghf.jpg',
-        video: 'satranga.mp4',
+        img: "arijithsinghf.jpg",
+        video: "satranga.mp4",
       },
       {
-        img: 'neha.jpg',
-        video: '',
+        img: "neha.jpg",
+        video: "satranga.mp4",
       },
       {
-        img: 'atiffinal.jpg',
-        video: '',
+        img: "atiffinal.jpg",
+        video: "satranga.mp4",
       },
       {
-        img: 'alkamam.jpg',
-        video: '',
+        img: "alkamam.jpg",
+        video: "satranga.mp4",
       },
       {
-        img: 'himesh.jpg',
-        video: '',
+        img: "himesh.jpg",
+        video: "satranga.mp4",
       },
       {
-        img: 'shreya.jpg',
-        video:'',
+        img: "shreya.jpg",
+        video: "satranga.mp4",
       },
       {
-        img: 'kumar.jpg',
-        video: '',
+        img: "kumar.jpg",
+        video: "satranga.mp4",
       },
       {
-        img: 'alka.jpg',
-        video: '',
+        img: "alka.jpg",
+        video: "satranga.mp4",
       },
       {
-        img: 'annu.jpg',
-        video:'',
+        img: "annu.jpg",
+        video: "satranga.mp4",
       },
       {
-        img: 'neha.jpg',
-        video: '',
-      }, {
-        img: 'arijithsinghf.jpg',
-        video:'',
+        img: "neha.jpg",
+        video: "satranga.mp4",
       },
       {
-        img: 'neha.jpg',
-        video:'',
+        img: "arijithsinghf.jpg",
+        video: "satranga.mp4",
       },
       {
-        img: 'atiffinal.jpg',
-        video: '',
-        text: 'Popular Singers'
+        img: "neha.jpg",
+        video: "satranga.mp4",
       },
       {
-        img: 'alkamam.jpg',
-        video:'',
+        img: "atiffinal.jpg",
+        video: "satranga.mp4",
+        text: "Popular Singers",
       },
       {
-        img: 'himesh.jpg',
-        video: '',
+        img: "alkamam.jpg",
+        video: "satranga.mp4",
       },
       {
-        img: 'shreya.jpg',
-        video:'',
+        img: "himesh.jpg",
+        video: "satranga.mp4",
       },
       {
-        img: 'kumar.jpg',
-        video: '',
+        img: "shreya.jpg",
+        video: "satranga.mp4",
       },
       {
-        img: 'alka.jpg',
-        video: '',
+        img: "kumar.jpg",
+        video: "satranga.mp4",
       },
       {
-        img: 'annu.jpg',
-        video:'',
+        img: "alka.jpg",
+        video: "satranga.mp4",
       },
       {
-        img: 'neha.jpg',
-        video: '',
+        img: "annu.jpg",
+        video: "satranga.mp4",
       },
-    ]
+      {
+        img: "neha.jpg",
+        video: "satranga.mp4",
+      },
+    ],
   },
-]
-
-
-
+];
 
 export default RowData;
